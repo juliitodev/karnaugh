@@ -2202,9 +2202,12 @@
   Puede editar manualmente esta función haciendo clic en las celdas del mapa. Alternativamente, puede generar un aleatorio
   función presionando el botón "Ejemplo aleatorio".</p>
   <p>
-    <button type="button" onclick="karnaugh.genRandom();">Random example</button> <button type="button"
+    <button type="button" style="background-color: aqua;" onclick="karnaugh.genRandom();">Random example</button> <button type="button" style="background-color: lightcoral;"
       onclick="karnaugh.clear();">Reset</button><br>
+      <br>
       <p class="select">NUMERO DE VARIABLES:</p> 
+      <br>
+      <br>
   <div class="caja">
   <select onchange="noOfVarsChanged();" id="noOfVarsChanged_id">
     <option value="1">1</option>
@@ -2218,11 +2221,14 @@
   <label for="p8">variable de peso 8</label>
   <input type="text" pattern="[A-Za-z]{1}" value="d" id="p8" name="p8" onkeyup="changeVariables(8);noOfVarsChanged();"/> 
   <br>
+  <br>
   <label for="p4">variable de peso 4</label>
   <input type="text" pattern="[A-Za-z]{1}" value="c" id="p4" name="p4" onkeyup="changeVariables(4);noOfVarsChanged();" /> 
   <br>
+  <br>
   <label for="p2">variable de peso 2</label>
   <input type="text" pattern="[A-Za-z]{1}" value="b" id="p2" name="p2" onkeyup="changeVariables(2);noOfVarsChanged();"/> 
+  <br>
   <br>
   <label for="p1">variable de peso 1</label>
   <input type="text" pattern="[A-Za-z]{1}" value="a" id="p1" name="p1" onkeyup="changeVariables(1);noOfVarsChanged();"/> 
